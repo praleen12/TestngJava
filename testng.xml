@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="InteBan">
+
+	<listeners>
+		<listener class-name="com.inetBank.utilities.Reporting" />
+	</listeners>
+	<test name="Banktest">
+		<parameter name="browser" value="chrome" />
+		<classes>
+
+			<class name="com.inetBank.testCases.TC_LoginTest_001" />
+			<!-- <class name="com.inetBank.testCases.TC_loginDDT_002" /> -->
+			<class name="com.inetBank.testCases.TC_AddNew_Customer_003" />
+
+		</classes>
+	</test>
+</suite>
